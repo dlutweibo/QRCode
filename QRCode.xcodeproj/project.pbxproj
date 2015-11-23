@@ -13,6 +13,9 @@
 		D600928F1BFB2F6100F86407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D600928D1BFB2F6100F86407 /* Main.storyboard */; };
 		D60092911BFB2F6100F86407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60092901BFB2F6100F86407 /* Assets.xcassets */; };
 		D60092941BFB2F6100F86407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60092921BFB2F6100F86407 /* LaunchScreen.storyboard */; };
+		D600929D1BFB355100F86407 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D600929C1BFB355100F86407 /* AlbumViewController.m */; };
+		D60092A01BFB357F00F86407 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D600929F1BFB357F00F86407 /* ScanViewController.m */; };
+		D60092A31BFB359000F86407 /* GeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60092A21BFB359000F86407 /* GeneratorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		D60092901BFB2F6100F86407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D60092931BFB2F6100F86407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D60092951BFB2F6100F86407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D600929B1BFB355100F86407 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		D600929C1BFB355100F86407 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		D600929E1BFB357F00F86407 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		D600929F1BFB357F00F86407 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		D60092A11BFB359000F86407 /* GeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorViewController.h; sourceTree = "<group>"; };
+		D60092A21BFB359000F86407 /* GeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				D60092881BFB2F6100F86407 /* AppDelegate.m */,
 				D600928A1BFB2F6100F86407 /* ViewController.h */,
 				D600928B1BFB2F6100F86407 /* ViewController.m */,
+				D600929E1BFB357F00F86407 /* ScanViewController.h */,
+				D600929F1BFB357F00F86407 /* ScanViewController.m */,
+				D600929B1BFB355100F86407 /* AlbumViewController.h */,
+				D600929C1BFB355100F86407 /* AlbumViewController.m */,
+				D60092A11BFB359000F86407 /* GeneratorViewController.h */,
+				D60092A21BFB359000F86407 /* GeneratorViewController.m */,
 				D600928D1BFB2F6100F86407 /* Main.storyboard */,
 				D60092901BFB2F6100F86407 /* Assets.xcassets */,
 				D60092921BFB2F6100F86407 /* LaunchScreen.storyboard */,
@@ -149,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D600929D1BFB355100F86407 /* AlbumViewController.m in Sources */,
+				D60092A01BFB357F00F86407 /* ScanViewController.m in Sources */,
+				D60092A31BFB359000F86407 /* GeneratorViewController.m in Sources */,
 				D600928C1BFB2F6100F86407 /* ViewController.m in Sources */,
 				D60092891BFB2F6100F86407 /* AppDelegate.m in Sources */,
 				D60092861BFB2F6100F86407 /* main.m in Sources */,
@@ -263,6 +281,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meituan.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -274,6 +296,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meituan.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -298,6 +324,7 @@
 				D600929A1BFB2F6100F86407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
